@@ -3,13 +3,12 @@ package tb.soft.zad1;
 import java.util.*;
 
 public class Words {
-    private Set words_hash = new HashSet();
-    private Set words_tree = new TreeSet();
-    public Long start, end, hash_set_operation_time, tree_set_operation_time;
+    private final Set words_hash = new HashSet();
+    private final Set words_tree = new TreeSet();
 
     public String get_words_hash(){
-        return "HashSet: " + words_hash.toString() + "\n" +
-                "TreeSet:  " + words_tree.toString() + "\n";
+        return "HashSet: " + words_hash + "\n" +
+                "TreeSet:  " + words_tree + "\n";
     }
     public List<Long> add_word(String word){
         Long start, end;
